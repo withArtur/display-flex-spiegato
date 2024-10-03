@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wrap - Flex recap</title>
     <style>
-        .container{
+        /* flex-wrap 🌯 */
+        .container {
             background-color: gainsboro;
             margin: 100px auto;
             width: 500px;
             height: 500px;
             display: flex;
-            flex-wrap: nowrap;
-            flex-wrap: wrap;
+            flex-wrap: nowrap; /* ⛔🌯 */
+            /* flex-wrap: wrap; 🌯 */
         }
-        .container div{
+
+        /* applichiamo flex-basis ad ogni div nel nostro container */
+        .container div {
             flex-basis: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        .container div:nth-child(1){
+
+        .container div:nth-child(1) {
             background-color: aqua;
         }
-        .container div:nth-child(2){
-            background-color:blueviolet;
+
+        .container div:nth-child(2) {
+            background-color: blueviolet;
         }
-        .container div:nth-child(3){
-            background-color:cadetblue;
+
+        .container div:nth-child(3) {
+            background-color: cadetblue;
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
     </div>
-    
+
 </body>
+
 </html>
