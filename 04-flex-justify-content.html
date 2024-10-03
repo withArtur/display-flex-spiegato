@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify content - Flex recap</title>
+    <style>
+        .container{
+            background-color: gainsboro;
+            margin: 100px auto;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly;
+        }
+        .container div{
+            flex-basis: 100px;
+        }
+        .container div:nth-child(1){
+            background-color: aqua;
+        }
+        .container div:nth-child(2){
+            background-color:blueviolet;
+        }
+        .container div:nth-child(3){
+            background-color:cadetblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+</body>
+</html>

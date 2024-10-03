@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrink - Flex recap</title>
+    <style>
+        .container{
+            background-color: gainsboro;
+            margin: 100px auto;
+            width: 500px;
+            height: 500px;
+            display: flex;
+        }
+        .container div{
+            flex-shrink: 0;
+        }
+        .container div:nth-child(1){
+            background-color: aqua;
+            
+            flex-basis: 200px;
+            flex-shrink: 1;
+        }
+        .container div:nth-child(2){
+            background-color:blueviolet;
+            flex-basis: 200px;
+            flex-shrink: 3;
+        }
+        .container div:nth-child(3){
+            background-color:cadetblue;
+            flex-basis: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>box1</div>
+        <div>box2</div>
+        <div>box3</div>
+    </div>
+    
+</body>
+</html>

@@ -4,41 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Base - display: flex; flex-basis, flex-grow</title>
+    <title>Direction - Flex recap</title>
     <style>
-        /* Semplice container con display: flex; */
+        /* Qui lavoriamo con le direzioni di flex */
         .container {
             background-color: gainsboro;
             margin: 100px auto;
             width: 500px;
             height: 500px;
             display: flex;
+            flex-direction: column-reverse;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: row; */
         }
 
         /* applichiamo flex-basis ad ogni div nel nostro container */
         .container div {
             flex-basis: 100px;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
         }
 
-        /* coloriamo il div 1 con aqua */
         .container div:nth-child(1) {
             background-color: aqua;
         }
 
-        /* applicchiamo flex-grow: 1; 
-        (che fara' accupare tutto lo spazio rimanente al nostro elemento flex) 
-        e coloriamo il div 2 con blueviolet */
         .container div:nth-child(2) {
             background-color: blueviolet;
-            flex-grow: 1;
         }
 
-        /* coloriamo il div 3 con cadetblue 
-        e aggiungiamo un margine a sinistra
-        che togliera' quindi 20px al nostro spazio flex */
         .container div:nth-child(3) {
             background-color: cadetblue;
-            margin-left: 20px;
         }
     </style>
 </head>
@@ -46,9 +44,9 @@
 <body>
 
     <div class="container">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
     </div>
 
 </body>

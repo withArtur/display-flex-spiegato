@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align items - Flex recap</title>
+    <style>
+        .container{
+            background-color: gainsboro;
+            margin: 100px auto;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            align-items: stretch;
+            align-items: center;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: baseline;
+            
+            
+        }
+        .container div{
+            flex-basis: 100px;
+        }
+        .container div:nth-child(1){
+            background-color: aqua;
+        }
+        .container div:nth-child(2){
+            background-color:blueviolet;
+        }
+        .container div:nth-child(3){
+            background-color:cadetblue;
+        }
+        .container div img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div>box1</div>
+        <div>
+            <h3>Box2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nihil, natus dolorem reprehenderit quasi dolores</p>
+        </div>
+        <div>
+            <img src="logo.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nihil, natus dolorem reprehenderit quasi dolores</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione nihil, natus dolorem reprehenderit quasi dolores</p>
+        </div>
+    </div>
+    
+</body>
+</html>

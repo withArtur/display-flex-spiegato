@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline vs inline-block</title>
+</head>
+<style>
+    .d-block{
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        padding: 10px;
+    }
+    span.item{
+        background-color: red;
+        margin: 10px;
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+    }
+    div.item{
+        display: inline-block;
+        background-color: blue;
+        margin: 10px;
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+<body>
+    <div class="d-block">Display : block</div>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque sunt facilis, 
+    tempore autem esse deleniti nobis! Aliquam pariatur commodi voluptate veniam soluta laudantium at, quibusdam sit deleniti maxime cupiditate.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque sunt facilis, 
+    tempore autem esse <span class="item">deleniti</span> nobis!Aliquam pariatur commodi voluptate veniam soluta laudantium at, quibusdam sit deleniti maxime cupiditate.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque sunt facilis, 
+    tempore autem esse deleniti nobis! Aliquam pariatur commodi voluptate <div class="item">veniam</div> soluta laudantium at, quibusdam sit deleniti maxime cupiditate.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque sunt facilis, 
+    tempore autem esse deleniti nobis! Aliquam pariatur commodi voluptate veniam soluta laudantium at, quibusdam sit deleniti maxime cupiditate.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque sunt facilis, 
+    tempore autem esse deleniti nobis! Aliquam pariatur commodi voluptate veniam soluta laudantium at, quibusdam sit deleniti maxime cupiditate.
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo cumque sunt facilis, 
+    
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+</head>
+<style>
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.container{
+    margin: 20px auto;
+    background-color: aquamarine;
+}
+.border-red{
+    border: 2px solid red;
+}
+img{
+    width: 200px;
+    float: left;
+    float: right;
+}
+</style>
+<body>
+    
+<div class="container clearfix border-red">
+    <img src="./logo.jpg">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur ea, voluptate eum neque tenetur voluptatum accusantium nulla iure perferendis unde, excepturi repellat deleniti, hic repudiandae minus doloremque! Voluptatem, aspernatur voluptate.</p>
+</div>
+
+
+</body>
+</html>
