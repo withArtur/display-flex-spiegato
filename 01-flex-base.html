@@ -17,12 +17,14 @@
 
         /* applichiamo flex-basis ad ogni div nel nostro container */
         .container div {
-            flex-basis: 100px;
+            /* flex-basis: 100px; */
+            width: 100px;
         }
 
         /* coloriamo il div 1 con aqua */
         .container div:nth-child(1) {
             background-color: aqua;
+            flex-grow: 1;
         }
 
         /* applicchiamo flex-grow: 1; 
