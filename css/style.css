@@ -1,0 +1,123 @@
+/* Stili di base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Container principale */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stili per header e paragrafi */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #2980b9;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #27ae60;
+    margin-top: 15px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Stile per evidenziare lo span */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* Stili per il tag code TODO anche span classe code, come farlo uguale? */
+code {
+    background-color: #f1f1f1;
+    color: #e74c3c;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.95em;
+    padding: 2px 4px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    white-space: pre-wrap;
+}
+
+/* Stili per immagine */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Stili per box */
+.box {
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-left: 5px solid #2980b9;
+    margin: 20px 0;
+}
+
+/* Stili per il container principale */
+.outer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    width: 80%;
+    height: 300px;
+    background-color: #ecf0f1;
+}
+
+/* Stili per i quadrati principali */
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #2980b9; /* Blu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Padding per lo spazio interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+}
+
+/* priorita id sulla classe, anche se classe definita dopo
+#box-colored { background-color: #000; } */
+
+/* Stili per i quadrati interni */
+.inner-square {
+    width: 100%;
+    height: 100%;
+    background-color: #e74c3c; /* Rosso */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Ombra leggera */
+}
+
+
+/* priorita id classe su solo tag come selettore 
+div {
+    background-color: #FFF !important;
+} */
+
+
+/* Stili per il footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #2c3e50;
+    color: white;
+}
